@@ -1,0 +1,43 @@
+.Die {
+	margin: 1rem;
+}
+
+.Die-is-rolling {
+	animation: wobble;
+	animation-duration: 1s;
+}
+
+.Die-face {
+	color: white;
+	font-size: 7.5rem;
+}
+
+@keyframes wobble {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+
+	15% {
+		transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+	}
+
+	30% {
+		transform: translate3d(-75%, 0, 0) rotate3d(0, 0, 1, -5deg);
+	}
+
+	45% {
+		transform: translate3d(-75%, 0, 0) rotate3d(0, 0, 1, -5deg);
+	}
+
+	60% {
+		transform: translate3d(75%, 0, 0) rotate3d(0, 0, 1, 0deg);
+	}
+
+	75% {
+		transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -3deg);
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
